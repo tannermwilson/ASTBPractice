@@ -28,8 +28,8 @@ function setup() {
   while (controllers.length == 0){
       //wait for controller to be connected
   } 
-  target = new Target();
-  crosshair = new Crosshair();
+  target = new j_target();
+  crosshair = new j_crosshair();
 }
 
 function draw() {
