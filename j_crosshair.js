@@ -1,5 +1,5 @@
 // Crosshair class - contains all functionality regarding joystick controlled crosshairs
-class Crosshair {
+class j_crosshair {
     constructor(){
         this.x = width/2;
         this.y = height/2;
@@ -7,7 +7,7 @@ class Crosshair {
     
     display(){
         this.x = this.x + controllers[0].axes[0] * 5;
-        if (this.x > width - 50 || this.x < 0) {
+        if (this.x > width - 50 || this.x < 50) {
             this.x = this.x-controllers[0].axes[0] * 5;
         }
         this.y = this.y - controllers[0].axes[1] * 5;
